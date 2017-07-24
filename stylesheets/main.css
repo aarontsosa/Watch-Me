@@ -2,6 +2,8 @@
     width: 100%;
 }
 .movieResults{
+    z-index: 1;
+    position: absolute;
     display: flex;
     flex-direction: column
 }
@@ -10,6 +12,7 @@
     transform: translate(-100%, 0)
 }
 .moreInfo{
+    z-index: 2;
     font-weight: bold;
     position: fixed;
     top:0;

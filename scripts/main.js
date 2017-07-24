@@ -5,6 +5,11 @@ var data = {
     "apikey": "1ca32dee"
 }
 
+var moredata = {
+    "t": "",
+    "apikey": "1ca32dee"
+}
+
 function getSearch() {
     return $('[data-search="trigger"]').val();
     
@@ -17,7 +22,7 @@ function searchMovie(){
 
 function displaySearch(info){
     // len = info["Search"].length;
-    for(i=0; i<1; i++){
+    for(i=0; i<2; i++){
     title = info["Search"][i]["Title"]
     year = info["Search"][i]["Year"]
     poster = info["Search"][i]["Poster"]
