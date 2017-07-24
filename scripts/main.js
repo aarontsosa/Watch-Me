@@ -16,7 +16,8 @@ function searchMovie(){
 }
 
 function displaySearch(info){
-    for(i=0; i<4; i++){
+    // len = info["Search"].length;
+    for(i=0; i<1; i++){
     title = info["Search"][i]["Title"]
     year = info["Search"][i]["Year"]
     poster = info["Search"][i]["Poster"]
@@ -28,11 +29,14 @@ function displayPoster(info){
     poster = info["Search"][0]["Poster"]
     
 }
-
 $('[data-button="trigger"]').on('click', function(event){
     event.preventDefault();
     searchMovie();
     var promise = $.get(URL, data);
     promise
         .then(displaySearch)
+})
+
+$('[data-poster="target"]').on('click', function(event){
+    $('[data-main="target"]').toggleClass('details')
 })

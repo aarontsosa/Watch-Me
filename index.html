@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <main class="" data-main="target">
         <form class="form-horizontal">
             <div class="form-group">
                 <input type="text" data-search="trigger" class="from-control movieSearch" placeholder="Movie Title" value="">
@@ -17,30 +17,19 @@
             <div class="form-group">
                 <input type="submit" class="btn btn-default" data-button="trigger">
             </div>
-        </form>    
-        <div class="card">
-            <div class="card-block">
-                <p data-result="target"></p>
-                <img src="" data-poster="target">
+        </form>
+        <div class="movieResults">
+            <div>    
+                <div class="card">
+                    <img src="" data-poster="target" class="card-img-top">
+                    <div class="card-block">
+                        <p data-result="target" class="card-text"></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-block">
-                <p data-result="target"></p>
-                <img src="" data-poster="target">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-block">
-                <p data-result="target"></p>
-                <img src="" data-poster="target">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-block">
-                <p data-result="target"></p>
-                <img src="" data-poster="target">
-            </div>
+        <div class="moreInfo">
+            <p> MORE INFORMATION! YASS </p>
         </div>
     </main>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
